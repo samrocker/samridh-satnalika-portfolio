@@ -41,7 +41,7 @@ const HeaderSection = () => {
             </div>
             <Link
               href="/"
-              className="py-3 px-5 flex-center gap-2 border-2 border-primary rounded-full backdrop-blur-lg bg-primary/20"
+              className="py-3 px-5 flex-center gap-2 border-2 border-primary/50 rounded-full backdrop-blur-lg bg-primary/10"
             >
               <h1 className="text-sm text-primary font-extrabold uppercase">
                 Resume
@@ -78,7 +78,7 @@ const HeaderSection = () => {
                   <div className="flex-end flex-col gap-5">
                     <Link
                       href="/"
-                      className="py-3 px-5 flex-center gap-2 border-2 border-primary rounded-full backdrop-blur-lg bg-primary/20"
+                      className="py-3 px-5 flex-center gap-2 border-2 border-primary rounded-full backdrop-blur-lg bg-primary/10"
                     >
                       <h1 className="text-sm text-primary font-extrabold uppercase">
                         Resume

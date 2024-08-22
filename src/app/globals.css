@@ -80,6 +80,12 @@
   .flex-end {
     @apply flex justify-end items-center;
   }
+
+  .gradient-text {
+    background: linear-gradient(to right, #981C82, #ED6D65, #B07900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @layer base {
