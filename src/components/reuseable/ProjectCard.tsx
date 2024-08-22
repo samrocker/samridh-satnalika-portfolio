@@ -18,10 +18,10 @@ const ProjectCard = ({
   return (
     <div
       className={cn(
-        "px-5 py-7 h-screen max-h-[630px] w-full max-w-[600px] flex-between flex-col gap-10 rounded-xl border-[1px] border-primary/50",
+        "px-5 py-7 h-screen max-h-[630px] w-full max-w-[600px] flex-between flex-col gap-5 rounded-xl border-[1px] border-primary/50",
         className
       )}
-    >
+      >
       <div className="w-full flex flex-col gap-5 items-start justify-center">
         <h1 className="text-2xl font-bold text-primary">{title}</h1>
         <div className="w-full flex flex-wrap gap-3 items-center justify-start">
@@ -37,7 +37,7 @@ const ProjectCard = ({
       </div>
       <div className="w-full flex flex-col gap-5 items-start justify-center">
         <p className="text-sm text-primary font-semibold max-w-[450px]">{description}</p>
-        <Link className="py-2 px-5 bg-secondary text-primary text-lg font-bold rounded-full border-[1px] border-primary/50" href={Redirect}>Visit Live</Link>
+        <Link className="py-2 px-5 bg-secondary text-primary text-lg font-bold rounded-full border-[1px] border-primary/50 hover:bg-secondary" target="_blank" href={Redirect}>Visit website</Link>
       </div>
     </div>
   );
