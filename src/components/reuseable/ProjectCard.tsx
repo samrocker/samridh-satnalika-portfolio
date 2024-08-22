@@ -18,7 +18,7 @@ const ProjectCard = ({
   return (
     <div
       className={cn(
-        "px-5 py-7 h-screen max-h-[630px] w-full max-w-[600px] flex-between flex-col gap-5 rounded-xl border-[1px] border-primary/50",
+        "px-5 py-7 min-h-fit lg:min-h-[630px] max-h-[630px] w-full max-w-[600px] flex-between flex-col gap-5 rounded-xl border-[1px] border-primary/50 shadow-2xl hover:shadow-white/50 duration-300",
         className
       )}
       >
@@ -32,8 +32,8 @@ const ProjectCard = ({
         ))}
         </div>
       </div>
-      <div className="flex flex-col gap-3 items-start justify-center">
-        <Image src={imageUrl} alt={title} height={1000} width={1000} className="w-full rounded-xl" />
+      <div className="w-full flex-center">
+        <Image src={imageUrl} alt={title} height={1000} width={1000} className="w-full object-cover rounded-xl" />
       </div>
       <div className="w-full flex flex-col gap-5 items-start justify-center">
         <p className="text-sm text-primary font-semibold max-w-[450px]">{description}</p>

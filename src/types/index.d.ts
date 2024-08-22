@@ -3,6 +3,6 @@ export interface projectCardTypes {
     tags: string;
     imageUrl: string;
     description: string;
-    className: string;
+    className?: string;
     Redirect: string;
 }

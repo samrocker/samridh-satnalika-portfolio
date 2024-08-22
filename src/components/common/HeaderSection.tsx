@@ -14,7 +14,7 @@ import {
 
 const HeaderSection = () => {
   return (
-    <section className="w-full sticky top-0">
+    <section className="w-full sticky top-0 bg-background shadow-2xl dark:shadow-white/30 rounded-b-3xl">
       <main className="max-w-[1440px] m-auto">
         <div className="py-5 px-5 w-full flex-between">
           <div className="flex-[1] flex-start">
