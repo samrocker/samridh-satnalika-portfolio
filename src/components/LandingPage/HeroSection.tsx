@@ -6,12 +6,12 @@ const HeroSection = () => {
   return (
     <section className="w-full">
       <main className="max-w-[1440px] m-auto">
-        <div className="py-5 px-5 w-full flex-between flex-col lg:flex-row gap-10">
+        <div className="py-5 px-5 w-full flex-between flex-col lg:flex-row gap-10 ">
           <div className="flex-[1] flex w-full flex-col gap-5 items-start justify-center">
-            <span className="py-2 px-5 text-primary text-xs md:text-sm lg:text-lg font-semibold border-2 border-primary/50 bg-primary/10 rounded-full">
+            <div className="flex flex-col">
+            <span className="py-2 px-2 text-primary text-lg md:text-xl lg:text-2xl font-semibold rounded-full">
               Hey I'am
             </span>
-            <div className="flex flex-col">
               <h1 className="text-primary text-4xl md:text-5xl lg:text-8xl font-extrabold">
                 SAMRIDH
               </h1>
@@ -28,7 +28,9 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="flex gap-5">
-              <Button className="py-6 px-5 text-xl font-bold text-primary bg-secondary rounded-full border-2 border-primary/50 hover:text-secondary">Hire Me</Button>
+              <Button className="py-6 px-5 text-xl font-bold text-primary bg-secondary rounded-full border-2 border-primary/50 hover:text-secondary">
+                Hire Me
+              </Button>
             </div>
           </div>
           <div className="flex-[1] flex-end w-full gap-5">

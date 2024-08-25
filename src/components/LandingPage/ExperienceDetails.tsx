@@ -26,7 +26,7 @@ const ExperienceDetails = () => {
             </div>
             <div className="flex-[1] w-full flex-center flex-col">
               <h1 className="text-2xl text-primary/75 font-bold">
-              Overall Global 
+                Overall Global
               </h1>
               <h1 className="text-2xl text-primary/75 font-bold">Customers</h1>
             </div>
@@ -39,7 +39,7 @@ const ExperienceDetails = () => {
             </div>
             <div className="flex-[1] w-full flex-center flex-col ">
               <h1 className="text-2xl text-primary/75 font-bold">
-              Projects I Have 
+                Projects I Have
               </h1>
               <h1 className="text-2xl text-primary/75 font-bold">Worked on</h1>
             </div>

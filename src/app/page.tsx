@@ -6,10 +6,10 @@ import ProjectsSection from "@/components/LandingPage/ProjectsSection";
 export default function Home() {
   return (
     <>
-    <HeroSection />
-    <AboutSection />
-    <ExperienceDetails />
-    <ProjectsSection />
+      <HeroSection />
+      <AboutSection />
+      <ExperienceDetails />
+      <ProjectsSection />
     </>
   );
 }
