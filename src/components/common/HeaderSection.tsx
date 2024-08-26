@@ -27,7 +27,7 @@ const HeaderSection = () => {
               <div className="flex-center gap-5" key={key}>
                 <Link
                   href={item.path}
-                  className="text-primary text-lg font-bold"
+                  className="text-primary text-lg font-normal"
                 >
                   {item.title}
                 </Link>
@@ -36,7 +36,7 @@ const HeaderSection = () => {
           </div>
           <div className="flex-[1] hidden lg:flex-end gap-5">
             <div className="flex-center gap-3">
-              <h1 className="text-primary text-lg font-bold uppercase">
+              <h1 className="text-primary text-lg font-normal uppercase">
                 theme
               </h1>
               <ThemeChangerButton />
@@ -45,7 +45,7 @@ const HeaderSection = () => {
               href="/"
               className="py-3 px-5 flex-center gap-2 border-2 border-card-foreground rounded-full backdrop-blur-lg bg-"
             >
-              <h1 className="text-sm text-primary font-extrabold uppercase">
+              <h1 className="text-sm text-primary font-semibold uppercase">
                 Resume
               </h1>
               <Image
