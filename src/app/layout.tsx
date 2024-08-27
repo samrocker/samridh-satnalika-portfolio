@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";  // Import Poppins font
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import HeaderSection from "@/components/common/HeaderSection";
-import { ThemeProvider } from "@/components/common/theme-provider"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] }); // Customize the font weights as needed
 
