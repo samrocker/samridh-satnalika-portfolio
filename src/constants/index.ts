@@ -22,8 +22,18 @@ export const HeaderContent = [
 
 export const FrontendIcons = [
   {
-    title: "ReactJS",
-    iconUrl: "/icons/frontend-languages-icon/reactjs.png",
+    title: "Javascript",
+    iconUrl: "/icons/frontend-languages-icon/javascript.png",
+  },
+
+  {
+    title: "typescript",
+    iconUrl: "/icons/frontend-languages-icon/typescript.png",
+  },
+
+  {
+    title: "tailwind",
+    iconUrl: "/icons/frontend-languages-icon/tailwind.png",
   },
 
   {
@@ -32,17 +42,24 @@ export const FrontendIcons = [
   },
 
   {
-    title: "Javascript",
-    iconUrl: "/icons/frontend-languages-icon/javascript.png",
+    title: "ReactJS",
+    iconUrl: "/icons/frontend-languages-icon/reactjs.svg",
+  },
+];
+
+export const BackendIcons = [
+  {
+    title: "NodeJS",
+    iconUrl: "/icons/backend-languages-icon/nodejs.png",
   },
 
   {
-    title: "",
-    iconUrl: "/icons/frontend-languages-icon/",
+    title: "ExpressJS",
+    iconUrl: "/icons/backend-languages-icon/Expressjs.png",
   },
 
   {
-    title: "",
-    iconUrl: "/icons/frontend-languages-icon/",
+    title: "Prisma",
+    iconUrl: "/icons/backend-languages-icon/prisma.png",
   },
 ];

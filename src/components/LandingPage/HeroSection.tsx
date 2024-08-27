@@ -20,7 +20,7 @@ const HeroSection = () => {
               </h1>
             </div>
             <div className="flex flex-col">
-              <p className="text-sm lg:text-lg text-primary dark:text-primary/75 font-semibold max-w-[550px]">
+              <p className="text-sm lg:text-lg text-primary/75 font-semibold max-w-[550px]">
                 <span className="underline">Full-Stack Web Developer</span> with
                 4+ years of experience, crafting robust applications using
                 Next.js with TypeScript and Node.js. Let's bring your ideas to

@@ -2,7 +2,6 @@ import { HeaderContent } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { ThemeChangerButton } from "../reuseable/ThemeChangerButton";
 import {
   Sheet,
   SheetContent,
@@ -14,7 +13,7 @@ import {
 
 const HeaderSection = () => {
   return (
-    <section className="w-full sticky top-0 bg-background shadow-2xl dark:shadow-white/30 rounded-b-3xl">
+    <section className="w-full sticky top-0 bg-background shadow-2xl shadow-white/30 rounded-b-3xl">
       <main className="max-w-[1440px] m-auto">
         <div className="py-5 px-5 w-full flex-between">
           <div className="flex-[1] flex-start">
@@ -35,12 +34,6 @@ const HeaderSection = () => {
             ))}
           </div>
           <div className="flex-[1] hidden lg:flex-end gap-5">
-            <div className="flex-center gap-3">
-              <h1 className="text-primary text-lg font-normal uppercase">
-                theme
-              </h1>
-              <ThemeChangerButton />
-            </div>
             <Link
               href="/"
               className="py-3 px-5 flex-center gap-2 border-2 border-card-foreground rounded-full backdrop-blur-lg bg-"
@@ -53,12 +46,11 @@ const HeaderSection = () => {
                 width={20}
                 height={20}
                 alt="download icon"
-                className="dark:invert"
+                className="invert"
               />
             </Link>
           </div>
           <div className="flex-[1] flex-end lg:hidden gap-5">
-            <ThemeChangerButton />
             <Sheet>
               <SheetTrigger asChild>
                 <Image
@@ -66,7 +58,7 @@ const HeaderSection = () => {
                   width={27}
                   height={27}
                   alt=""
-                  className="dark:invert"
+                  className="invert"
                 />
               </SheetTrigger>
               <SheetContent side="left">
@@ -96,7 +88,7 @@ const HeaderSection = () => {
                         width={20}
                         height={20}
                         alt="download icon"
-                        className="dark:invert"
+                        className="invert"
                       />
                     </Link>
                   </div>

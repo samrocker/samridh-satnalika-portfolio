@@ -20,15 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn('bg-background', poppins.className)}> 
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
         <HeaderSection />
         {children}
-        </ThemeProvider>
       </body>
     </html>
   );
