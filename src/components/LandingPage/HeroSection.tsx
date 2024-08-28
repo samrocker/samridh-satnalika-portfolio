@@ -1,31 +1,32 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import GradualSpacing from "@/components/magicui/gradual-spacing";
 
 const HeroSection = () => {
   return (
     <section className="w-full">
       <main className="max-w-[1440px] m-auto">
-        <div className="py-5 px-5 w-full flex-between flex-col lg:flex-row gap-10 ">
+        <div className="py-5 px-5 w-full flex-between flex-col lg:flex-row gap-10 relative">
           <div className="flex-[1] flex w-full flex-col gap-5 items-start justify-center">
-            <div className="flex flex-col">
-            <span className="py-2 px-2 text-primary text-lg md:text-xl lg:text-2xl font-semibold rounded-full">
-              Hey I'am
-            </span>
-              <h1 className="text-primary text-4xl md:text-5xl lg:text-8xl font-extrabold">
-                SAMRIDH
-              </h1>
-              <h1 className="text-primary text-4xl md:text-5xl lg:text-8xl font-extrabold">
-                SATNALIKA
-              </h1>
+            <div className="flex flex-col items-start justify-center">
+              <GradualSpacing className="text-primary text-lg md:text-xl lg:text-2xl font-semibold rounded-full flex"
+                text="Hey I'am"
+                />
+              <GradualSpacing
+                className="text-primary text-4xl md:text-5xl lg:text-8xl font-extrabold"
+                text="SAMRIDH"
+              />
+              <GradualSpacing
+                className="text-primary text-4xl md:text-5xl lg:text-8xl font-extrabold"
+                text="SATNALIKA"
+              />
             </div>
-            <div className="flex flex-col">
-              <p className="text-sm lg:text-lg text-primary/75 font-semibold max-w-[550px]">
-                <span className="underline">Full-Stack Web Developer</span> with
-                4+ years of experience, crafting robust applications using
-                Next.js with TypeScript and Node.js. Let's bring your ideas to
-                life with clean, efficient code.
-              </p>
+            <div className="flex flex-col items-start justify-center">
+              <GradualSpacing className="text-sm text-primary/75 font-extrabold font" text="Full-Stack Web Developer with" />
+              <GradualSpacing className="text-sm text-primary/75 font-extrabold font" text="4+ years of experience, crafting robust applications using" />
+              <GradualSpacing className="text-sm text-primary/75 font-extrabold font" text="Next.js with TypeScript and Node.js. Let's bring your ideas to" />
+              <GradualSpacing className="text-sm text-primary/75 font-extrabold font" text="life with clean, efficient code." />
             </div>
             <div className="flex gap-5">
               <Button className="py-6 px-5 text-xl font-bold text-primary bg-secondary rounded-full border-2 border-primary/50 hover:text-secondary">

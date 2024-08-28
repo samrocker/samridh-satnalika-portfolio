@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";  // Import Poppins font
+import { Poppins } from "next/font/google"; 
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import HeaderSection from "@/components/common/HeaderSection";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] }); // Customize the font weights as needed
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] }); 
 
 export const metadata: Metadata = {
   title: "SAMRIDH SATNALIKA | PORTFOLIO",

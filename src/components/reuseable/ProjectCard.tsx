@@ -4,8 +4,9 @@ import { cn } from "@/lib/utils";
 import { projectCardTypes } from "@/types";
 import Image from "next/image";
 import React from "react";
-import { Button } from "../ui/button";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Link from "next/link";
+import ShineBorder from "@/components/magicui/shine-border";
 
 const ProjectCard = ({
   title,
@@ -16,47 +17,66 @@ const ProjectCard = ({
   Redirect,
 }: projectCardTypes) => {
   return (
-    <div
-      className={cn(
-        "px-5 py-7 min-h-fit lg:min-h-[630px] max-h-[630px] w-full max-w-[600px] flex-between flex-col gap-5 bg-card rounded-xl border  -[1px] border-card-foreground shadow-2xl hover:shadow-white/50 duration-300",
-        className
-      )}
-    >
-      <div className="w-full flex flex-col gap-5 items-start justify-center">
-        <h1 className="text-2xl font-bold text-primary">{title}</h1>
-        <div className="w-full flex flex-wrap gap-3 items-center justify-start">
+    <CardContainer className={cn("inter-var border-2 rounded-xl duration-300 hover:shadow-lg shadow-white/50 relative", className)}>
+    <ShineBorder
+    className="relative flex  w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
+    color={["#981C82", "#ED6D65", "#B07900"]}
+  >
+      <CardBody className="bg-card relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full max-w-[600px] h-auto rounded-xl p-6 border">
+        <CardItem
+          translateZ="50"
+          className="text-2xl font-bold text-primary"
+        >
+          {title}
+        </CardItem>
+
+        <CardItem
+          translateZ="60"
+          as="div"
+          className="w-full flex flex-wrap gap-3 items-center justify-start mt-3"
+        >
           {tags.split(",").map((tag, index) => (
             <span
               key={index}
-              className="py-2 px-5 bg-secondary text-xs font-bold rounded-full"
+              className="py-2 px-5 bg-white text-xs font-bold rounded-full"
             >
               {tag.trim()}
             </span>
           ))}
-        </div>
-      </div>
-      <div className="w-full flex-center">
-        <Image
-          src={imageUrl}
-          alt={title}
-          height={1000}
-          width={1000}
-          className="w-full object-cover rounded-xl"
-        />
-      </div>
-      <div className="w-full flex flex-col gap-5 items-start justify-center">
-        <p className="text-sm text-primary font-semibold max-w-[450px]">
-          {description}
-        </p>
-        <Link
-          className="py-2 px-5 bg-card text-primary text-lg font-bold rounded-full border-[1px] border-card-foreground hover:bg-secondary"
-          target="_blank"
-          href={Redirect}
+        </CardItem>
+
+        <CardItem translateZ="100" className="w-full mt-4">
+          <Image
+            src={imageUrl}
+            alt={title}
+            height={1000}
+            width={1000}
+            className="w-full object-cover rounded-xl group-hover/card:shadow-xl"
+          />
+        </CardItem>
+
+        <CardItem
+          translateZ="60"
+          as="p"
+          className="text-sm text-primary font-semibold max-w-[450px] mt-5"
         >
-          Visit website
-        </Link>
-      </div>
-    </div>
+          {description}
+        </CardItem>
+
+        <div className="flex justify-between items-center mt-10">
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href={Redirect}
+            target="_blank"
+            className="py-2 px-5 bg-card text-primary text-lg font-bold rounded-full border-2 border-card-foreground/20 hover:bg-secondary"
+          >
+            Visit website
+          </CardItem>
+        </div>
+      </CardBody>
+    </ShineBorder>
+    </CardContainer>
   );
 };
 
