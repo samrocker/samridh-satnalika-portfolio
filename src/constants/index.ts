@@ -62,4 +62,9 @@ export const BackendIcons = [
     title: "Prisma",
     iconUrl: "/icons/backend-languages-icon/prisma.png",
   },
+  
+  {
+    title: "MongoDB",
+    iconUrl: "/icons/backend-languages-icon/mongodb.png",
+  },
 ];
