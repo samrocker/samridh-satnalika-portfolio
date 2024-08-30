@@ -19,7 +19,7 @@ const AboutSection = () => {
             />
           </div>
           <div className="flex-[1] lg:flex-[1.5] w-full flex-center flex-col">
-            <p className="text-lg lg:text-2xl text-primary font-bold">
+            <p className="text-lg lg:text-2xl text-primary font-bold uppercase max-w-[1000px]">
               With 4+ years as a Full-Stack Web Developer, I specialize in
               crafting intuitive, high-performance applications. My front-end
               work leverages Next.js with TypeScript, while I build robust

@@ -18,10 +18,6 @@ const ProjectCard = ({
 }: projectCardTypes) => {
   return (
     <CardContainer className={cn("inter-var border-2 rounded-xl duration-300 hover:shadow-lg shadow-white/50 relative", className)}>
-    <ShineBorder
-    className="relative flex  w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl"
-    color={["#981C82", "#ED6D65", "#B07900"]}
-  >
       <CardBody className="bg-card relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full max-w-[600px] h-auto rounded-xl p-6 border">
         <CardItem
           translateZ="50"
@@ -38,7 +34,7 @@ const ProjectCard = ({
           {tags.split(",").map((tag, index) => (
             <span
               key={index}
-              className="py-2 px-5 bg-white text-xs font-bold rounded-full"
+              className="py-2 px-5 bg-white text-xs font-bold rounded-full text-primary"
             >
               {tag.trim()}
             </span>
@@ -75,7 +71,6 @@ const ProjectCard = ({
           </CardItem>
         </div>
       </CardBody>
-    </ShineBorder>
     </CardContainer>
   );
 };
