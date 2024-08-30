@@ -13,7 +13,7 @@ const ProjectsSection = () => {
               My Projects
             </h1>
           </div>
-          <div className="flex-[2] w-full grid grid-cols-1 lg:grid-cols-2 gap-5 place-items-center">
+          <div className="flex-[2] w-full grid grid-cols-1 lg:grid-cols-2 place-items-center">
             <ProjectCard
               title="Techsolace Meeting Application"
               tags="Video Conferencing, Modern, #NextJS, TailwindCSS"

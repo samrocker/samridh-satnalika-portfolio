@@ -45,6 +45,11 @@ export const FrontendIcons = [
     title: "ReactJS",
     iconUrl: "/icons/frontend-languages-icon/reactjs.svg",
   },
+
+  {
+    title: "Redux",
+    iconUrl: "/icons/frontend-languages-icon/redux.png",
+  },
 ];
 
 export const BackendIcons = [
@@ -67,4 +72,5 @@ export const BackendIcons = [
     title: "MongoDB",
     iconUrl: "/icons/backend-languages-icon/mongodb.png",
   },
+  
 ];
