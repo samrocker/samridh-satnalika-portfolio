@@ -34,7 +34,7 @@ const ProjectCard = ({
           {tags.split(",").map((tag, index) => (
             <span
               key={index}
-              className="py-2 px-5 bg-white text-xs font-bold rounded-full text-primary"
+              className="py-2 px-5 bg-white text-xs font-bold rounded-full text-black"
             >
               {tag.trim()}
             </span>
