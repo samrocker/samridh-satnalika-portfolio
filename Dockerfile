@@ -1,5 +1,5 @@
 # Use an official Node runtime as the base image
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Set the working directory in the container
 WORKDIR /app
@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 5050
 
 # Start the application
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
